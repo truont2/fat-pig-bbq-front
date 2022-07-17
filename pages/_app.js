@@ -1,38 +1,50 @@
-import { useEffect, useState } from 'react'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
-import '../styles/globals.css'
+import { useEffect, useState } from "react";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    console.log("I am useEffect from app.js")
-  }, [])
+    console.log("I am useEffect from app.js");
+  }, []);
 
-  const [cart, setCart] = useState([])
-  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState([]);
+  const [reloadKey, setReloadKey] = useState(1);
 
   const addToCart = (item, qty, price) => {
-    let newCart = cart
+    let newCart = cart;
     for (let i = 0; i < qty; i++) {
-      newCart.push([item, price])
+      newCart.push([item, price]);
     }
-    console.log("Add to cart", newCart)
-    setCart(newCart)
-    setReloadKey(Math.random())
-  }
+    console.log("Add to cart", newCart);
+    setCart(newCart);
+    setReloadKey(Math.random());
+  };
 
   const removeFromCart = (item, qty) => {
-    let newCart = cart
-    let index = newCart.indexOf(item)
-    newCart.splice(index)
-    setCart(newCart)
-  }
+    let newCart = cart;
+    let index = newCart.indexOf(item);
+    newCart.splice(index);
+    setCart(newCart);
+  };
 
   const clearCart = (item) => {
-    setCart([])
-  }
+    setCart([]);
+  };
 
-  return <><NavBar key={reloadKey} cart={cart} /><Component cart={cart} removeFromCart={removeFromCart} addToCart={addToCart} clearCart={clearCart} {...pageProps} /><Footer/></>
+  return (
+    <>
+      <NavBar key={reloadKey} cart={cart} />
+      <Component
+        cart={cart}
+        removeFromCart={removeFromCart}
+        addToCart={addToCart}
+        clearCart={clearCart}
+        {...pageProps}
+      />
+      <Footer />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
