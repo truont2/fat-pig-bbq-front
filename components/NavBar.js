@@ -12,8 +12,9 @@ const NavBar = ({cart}) => {
                     </a></Link>
                     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                         <Link href="/"><a class="mr-5" style={{color: 'white', fontSize: "24px"}}>Home</a></Link>
-                        <Link href="/about"><a class="mr-5" style={{color: 'white', fontSize: "24px"}}>About</a></Link>
+                        <Link href="/about-page"><a class="mr-5" style={{color: 'white', fontSize: "24px"}}>About</a></Link>
                         <Link href="/products"><a class="mr-5 hover:text-gray-900">Products</a></Link>
+                        <Link href="/menu"><a class="mr-5 hover:text-gray-900">Menu</a></Link>
                         <Link href="/contact"><a class="mr-5 hover:text-gray-900">Contact</a></Link>
                         <Link href="/checkout"><a class="mr-5 hover:text-gray-900">Cart({cart.length})</a></Link>
                     </nav>

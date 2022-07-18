@@ -5,14 +5,15 @@ import FeatureColumnsGroup from "./sections/feature-columns-group"
 import FeatureRowsGroup from "./sections/feature-rows-group"
 // // import BottomActions from "./sections/bottom-actions"
 // // import TestimonialsGroup from "./sections/testimonials-group"
-// import RichText from "./sections/rich-text";
+import RichText from "./sections/rich-text";
 // // import Pricing from "./sections/pricing"
 // // import LeadForm from "./sections/lead-form"
 import location from '../components/Location';
 import Yelp  from "../components/Yelp";
-
+import menuItems from '../components/sections/menuItems'
 // Map Strapi sections to section components
 const sectionComponents = {
+  ComponentSectionsMenuItems: menuItems,
   Location: location,
   ComponentSectionsReviews: Yelp,
   ComponentSectionsHero: Hero,
@@ -21,7 +22,7 @@ const sectionComponents = {
   ComponentSectionsFeatureRowsGroup: FeatureRowsGroup,
 // //   ComponentSectionsBottomActions: BottomActions,
 // //   ComponentSectionsTestimonialsGroup: TestimonialsGroup,
-//   ComponentSectionsRichText: RichText,
+  ComponentSectionsRichText: RichText,
 //   ComponentSectionsPricing: Pricing,
 //   ComponentSectionsLeadForm: LeadForm,
 }

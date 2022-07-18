@@ -11,7 +11,7 @@ const Map = () => {
       center={location}
       zoom={14}
       scrollWheelZoom={true}
-      style={{ height: "40vh", zIndex: 0}}
+      style={{ height: "100%",width: "100%", zIndex: 0}}
     >
       <TileLayer
         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
