@@ -6,7 +6,7 @@ import { getStrapiMedia } from "../../utils/media";
 const FeatureRowsGroup = ({ data }) => {
   return (
     <div class="sm:w-5/6 mx-auto">
-      <div className="container flex flex-col gap-12 py-8">
+      <div className="container flex flex-col gap-12 py-8 ">
         {data.features.map((feature, index) => (
           <div
             className={classNames(
@@ -49,7 +49,7 @@ const FeatureRowsGroup = ({ data }) => {
             {/* </div> */}
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 mx-auto">
               <img
-                class="object-cover object-center rounded"
+                class="object-cover object-center rounded drop-shadow-2xl"
                 alt="hero"
                 src={`${getStrapiMedia(feature.media.data.attributes.url)}`}
               />
