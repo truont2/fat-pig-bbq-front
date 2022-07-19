@@ -19,6 +19,7 @@ function menuItems({data}) {
             </a>
             <div class="mt-4">
               <h2 class="text-gray-900 title-font text-lg font-medium">{item.title}</h2>
+              <p>{item.description}</p>
               <p class="mt-1">${item.price}</p>
             </div>
           </div>
