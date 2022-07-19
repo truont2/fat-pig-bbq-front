@@ -11,11 +11,11 @@ const NavBar = ({cart}) => {
                         <span class="ml-3 text-xl"></span>
                     </a></Link>
                     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                        <Link href="/"><a className={`mr-5 ${styles.linkunderline}`}  style={{color: 'white', fontSize: "16px"}}>HOME</a></Link>
-                        <Link href="/about-page"><a className={`mr-5 ${styles.linkunderline}`} style={{color: 'white', fontSize: "16px"}}>ABOUT</a></Link>
-                        <Link href="/menu"><a style={{color: 'white', fontSize: "16px"}} className={`mr-5 ${styles.linkunderline}`}>Menu</a></Link>
-                        <Link href="/contact"><a style={{color: 'white', fontSize: "16px"}} className={`mr-5 ${styles.linkunderline}`}>Contact</a></Link>
-                        <Link href="/checkout"><a style={{color: 'white', fontSize: "16px"}}class="mr-5 hover:text-gray-900">Cart({cart.length})</a></Link>
+                        <Link href="/"><a className={`mr-5 ${styles.linkunderline}`}  style={{color: 'white', fontSize: "18px"}}>HOME</a></Link>
+                        <Link href="/about-page"><a className={`mr-5 ${styles.linkunderline}`} style={{color: 'white', fontSize: "18px"}}>ABOUT</a></Link>
+                        <Link href="/menu"><a style={{color: 'white', fontSize: "18px"}} className={`mr-5 ${styles.linkunderline}`}>MENU</a></Link>
+                        <Link href="/contact"><a style={{color: 'white', fontSize: "18px"}} className={`mr-5 ${styles.linkunderline}`}>CONTACT</a></Link>
+                        <Link href="/checkout"><a style={{color: 'white', fontSize: "18px"}}class="mr-5 hover:text-gray-900">CART({cart.length})</a></Link>
                     </nav>
                     <button className="my-2 text-white bg-indigo-500 border-0 md:py-2 px-4 focus:outline-none hover:bg-indigo-600 rounded text-sm">Login
                     </button>
