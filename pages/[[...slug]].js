@@ -45,7 +45,7 @@ export default function DynamicPage({
     <div
       style={{
         margin: "0px auto 150px",
-        background: "white",
+        background: "#F5F9E9",
         paddingBottom: "50px",
       }}
     >
