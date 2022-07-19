@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
   };
 
   return (
-    <div class="bg-[#F8F0E3]">
+    <div class="bg-[#FAF9F6]">
       <NavBar key={reloadKey} cart={cart} />
       <Component
         cart={cart}
