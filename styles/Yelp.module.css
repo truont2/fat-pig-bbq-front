@@ -9,6 +9,7 @@
     margin: 100px auto;
     overflow-x: hidden;
     flex-direction: column;
+    height: fit-content;
   }
 
 

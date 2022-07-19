@@ -7,7 +7,7 @@ const NavBar = ({cart}) => {
             <header class="text-gray-600" style={{ fontFamily: "Roboto", backgroundColor: "rgba(129,52,0,255)"}}>
                 <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                     <Link href="/"><a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        <img src="./assets/fatpigbanner 2.jpg" style={{ width: '250px' }}/>
+                        <img src="./assets/fatpigbanner_2.jpg" style={{ width: '250px' }}/>
                         <span class="ml-3 text-xl"></span>
                     </a></Link>
                     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
