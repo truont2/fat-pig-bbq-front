@@ -6,7 +6,7 @@ import { NextSeo } from "next-seo";
 import Sections from "../components/section";
 // import Seo from "../components/elements/seo";
 import Layout from "../components/layout";
-import {BarLoader} from 'react-spinners';
+import { FadeLoader } from "react-spinners";
 
 export default function DynamicPage({
   sections,
@@ -21,12 +21,15 @@ export default function DynamicPage({
   if (!router.isFallback && !sections?.length) {
     // return <ErrorPage statusCode={404} />;
     router.push("/");
-    
   }
 
   // Loading screen (only possible in preview mode)
   if (router.isFallback) {
-    return <div className="grid h-screen place-items-center"><BarLoader color="rgba(204, 26, 26, 1)"/></div>;
+    return (
+      <div className="grid h-screen place-items-center">
+        <FadeLoader color="#da2222" />
+      </div>
+    );
   }
 
   // Merge default site SEO settings with page specific SEO settings

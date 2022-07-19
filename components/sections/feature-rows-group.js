@@ -46,7 +46,7 @@ const FeatureRowsGroup = ({ data }) => {
               />
             )} */}
           {/* </div> */}
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 mx-auto">
             <img
               class="object-cover object-center rounded"
               alt="hero"
