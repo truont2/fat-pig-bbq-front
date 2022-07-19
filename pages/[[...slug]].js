@@ -20,7 +20,7 @@ export default function DynamicPage({
   // Check if the required data was provided
   if (!router.isFallback && !sections?.length) {
     // return <ErrorPage statusCode={404} />;
-    router.push("/");
+    return <h1>Broken</h1>
   }
 
   // Loading screen (only possible in preview mode)
