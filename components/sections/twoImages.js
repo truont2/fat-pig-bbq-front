@@ -8,7 +8,7 @@ export default function twoImages({ data }) {
         <div class="flex flex-wrap -mx-4 -mb-10 text-center justify-center">
           {data.images.data.map((image) => {
             return (
-              <div class="sm:w-1/2 mb-10 px-4">
+              <div class="sm:w-1/3 mb-10 px-4">
                 <div class="rounded-lg h-4/6 overflow-hidden">
                   <img
                     alt="content"

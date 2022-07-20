@@ -12,7 +12,7 @@ const FeatureRowsGroup = ({ data }) => {
             <div
               class={classNames(
                 // Common classes
-                "flex flex-col justify-start md:justify-between md:items-center m-2 gap-10",
+                "flex flex-col justify-start md:justify-between items-center m-2 gap-10",
                 {
                   "lg:flex-row": index % 2 === 0,
                   "lg:flex-row-reverse ": index % 2 === 1,
@@ -48,7 +48,7 @@ const FeatureRowsGroup = ({ data }) => {
               />
             )} */}
               {/* </div> */}
-              <div class="lg:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0 mx-auto">
+              <div class="lg:max-w-lg lg:w-full mb-10 md:mb-0 mx-auto">
                 {/* <img
                   class="object-cover object-center rounded drop-shadow-2xl"
                   alt="hero"
@@ -75,7 +75,7 @@ const FeatureRowsGroup = ({ data }) => {
                   />
                 )}
               </div>
-              <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+              <div class="lg:flex-grow md:w-full lg:pl-24  flex flex-col md:items-start md:text-left text-center items-center text-center">
                 <h1 class="title-font text-3xl md:text-4xl mb-4 font-medium text-gray-900">
                   {feature.title}
                   {/* <br class="hidden lg:inline-block" />readymade gluten */}
