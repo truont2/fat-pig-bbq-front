@@ -11,6 +11,7 @@ import RichText from "./sections/rich-text";
 import location from '../components/Location';
 import Yelp  from "../components/Yelp";
 import menuItems from '../components/sections/menuItems'
+import Images from '../components/sections/twoImages'
 // Map Strapi sections to section components
 const sectionComponents = {
   ComponentSectionsMenuItems: menuItems,
@@ -23,6 +24,7 @@ const sectionComponents = {
 // //   ComponentSectionsBottomActions: BottomActions,
 // //   ComponentSectionsTestimonialsGroup: TestimonialsGroup,
   ComponentSectionsRichText: RichText,
+  Images: Images
 //   ComponentSectionsPricing: Pricing,
 //   ComponentSectionsLeadForm: LeadForm,
 }
@@ -44,7 +46,7 @@ const Section = ({ sectionData }) => {
 // Display the list of sections
 const Sections = ({ sections, preview }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-[#FAF9F6]">
       {/* Show the actual sections */}
       {sections.map((section) => (
         <Section
