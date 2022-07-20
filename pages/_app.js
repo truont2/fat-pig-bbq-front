@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import "../styles/globals.css";
+import styles from "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

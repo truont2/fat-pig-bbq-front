@@ -2,9 +2,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div>
-            <footer class="text-gray-600 body-font">
-                <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <footer class="text-gray-600 body-font bg-[#FAF9F6]">
+                <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col ">
                     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                         <img src='./assets/fatpiglogo.png' style={{ width: '40px' }}/>
                         <span class="ml-3 text-xl">Fat Pig BBQ</span>
@@ -26,7 +25,6 @@ const Footer = () => {
                     </span>
                 </div>
             </footer>
-        </div>
     )
 }
 

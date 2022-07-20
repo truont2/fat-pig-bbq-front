@@ -21,7 +21,7 @@ const Layout = ({ children, global, pageContext }) => {
     setBannerIsShown(false)
   }
   return (
-    <div className="flex flex-col justify-between min-h-screen">
+    <div className="flex flex-col justify-between min-h-screen bg-[#FAF9F6]">
       {/* Aligned to the top */}
       <div className="flex-1">
         {console.log(bannerIsShown)}
@@ -31,7 +31,7 @@ const Layout = ({ children, global, pageContext }) => {
             closeSelf={closeBanner}
           />
         )}
-        <div className="container px-5 mx-auto">{children}</div>
+        <div className=" mx-auto w-screen">{children}</div>
       </div>
     </div>
   )
