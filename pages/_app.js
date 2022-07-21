@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import styles from "../styles/globals.css";
+// import 'flowbite';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -32,6 +33,11 @@ function MyApp({ Component, pageProps }) {
     setCart([]);
   };
 
+  useEffect(() => {
+    import('flowbite');
+  }, []);
+
+  
   return (
     <div class="bg-[#FAF9F6]">
       <NavBar key={reloadKey} cart={cart} />
