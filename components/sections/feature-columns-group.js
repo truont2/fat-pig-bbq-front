@@ -24,12 +24,17 @@ const FeatureColumnsGroup = ({ data }) => {
     //   ))}
     // </div>
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-5 py-10 mx-auto">
         <div class="flex flex-col text-center w-full mb-10">
-        <h1 class="text-4xl font-medium title-font text-gray-900 mb-5 text-center">Ordering Options</h1>
-          <h1 class="md:text-xl text-xl font-medium title-font mb-4 text-gray-900">
-            Order online and have the food delivered or pick it up yourself in-store!
+          <h1 class="text-4xl font-medium title-font text-gray-900 mb-5 text-center">
+            Ordering Options
           </h1>
+          {/* <h1 class="md:text-xl text-xl font-medium title-font mb-4 text-gray-900">
+            Order online and have the food delivered or pick it up yourself in-store!
+          </h1> */}
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-[#813400] inline-flex"></div>
+          </div>
           {/* <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
             Order online and have the food delivered or pick it up yourself in-store!
           </p> */}
@@ -37,17 +42,22 @@ const FeatureColumnsGroup = ({ data }) => {
         <div class="flex flex-wrap">
           {data.features.map((feature) => (
             <div class="xl:w-1/4 lg:w-1/2 md:w-full  px-8 py-6 sm:border-l-2 border-gray-200 border-opacity-60 flex flex-col justify-between">
-              <div><h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                {feature.title}
-              </h2>
-              <p class="leading-relaxed text-base mb-4">
-                {feature.description}
-              </p></div>
-              
-              <a href={feature.link.url} class="text-indigo-800 inline-flex items-center">
-              <button class="bg-transparent hover:bg-[#813400] text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">
-              {feature.link.text}
-            </button>
+              <div>
+                <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+                  {feature.title}
+                </h2>
+                <p class="leading-relaxed text-base mb-4">
+                  {feature.description}
+                </p>
+              </div>
+
+              <a
+                href={feature.link.url}
+                class="text-indigo-800 inline-flex items-center"
+              >
+                <button class="bg-[#813400] hover:bg-black text-white font-semibold hover:text-white py-2 px-4 border  hover:border-transparent rounded">
+                  {feature.link.text}
+                </button>
                 <svg
                   fill="none"
                   stroke="black"
@@ -60,7 +70,6 @@ const FeatureColumnsGroup = ({ data }) => {
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </a>
-              
             </div>
           ))}
         </div>

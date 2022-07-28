@@ -4,7 +4,7 @@ import { getLocalizedPaths } from "../utils/localize";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 import Sections from "../components/section";
-// import Seo from "../components/elements/seo";
+import Seo from "../components/elements/seo";
 import Layout from "../components/layout";
 import { FadeLoader } from "react-spinners";
 
@@ -44,13 +44,14 @@ export default function DynamicPage({
   return (
     <div
       style={{
-        margin: "0px auto 100px",
+        margin: "auto",
         background: "FAF9F6",
         paddingBottom: "50px",
       }}
     >
       {/* <Seo metadata={metadataWithDefaults} /> */}
       <Layout global={global} pageContext={pageContext}>
+        <Seo metadata={metadataWithDefaults} />
         <Sections sections={sections} preview={preview} />
       </Layout>
     </div>

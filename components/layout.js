@@ -8,8 +8,9 @@ const Layout = ({ children, global, pageContext }) => {
   const { navbar, footer, notificationBanner } = global.attributes;
 
   useEffect(() => {
-    if(window.localStorage.getItem('alertStatus') != undefined) {
-      setBannerIsShown(JSON.parse(window.localStorage.getItem('alertStatus')));
+    const status = window.sessionStorage.getItem('alertStatus')
+    if(status != undefined) {
+      setBannerIsShown(JSON.parse(status));
     } else {
       setBannerIsShown(true);
     }
@@ -17,14 +18,13 @@ const Layout = ({ children, global, pageContext }) => {
 
   const [bannerIsShown, setBannerIsShown] = useState();
   const closeBanner = (e) => {
-    window.localStorage.setItem('alertStatus', 'false');
+    window.sessionStorage.setItem('alertStatus', 'false');
     setBannerIsShown(false)
   }
   return (
     <div className="flex flex-col justify-between min-h-screen bg-[#FAF9F6]">
       {/* Aligned to the top */}
       <div className="flex-1">
-        {console.log(bannerIsShown)}
         {notificationBanner && bannerIsShown && (
           <NotificationBanner
             data={notificationBanner}

@@ -96,7 +96,7 @@ const NavBar = ({ cart }) => {
                 </a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/checkout">
                 <a
                   style={{ color: "white", fontSize: "18px" }}
@@ -105,12 +105,12 @@ const NavBar = ({ cart }) => {
                   CART({cart.length})
                 </a>
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <button className="my-2 text-white bg-indigo-500 border-0 md:py-2 px-4 focus:outline-none hover:bg-indigo-600 rounded text-sm">
                 Login
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { getStrapiMedia } from "../../utils/media";
 const FeatureRowsGroup = ({ data }) => {
   return (
     <div class="w-screen">
-      <div class="sm:w-4/6 mx-auto gap-5">
+      <div class="sm:w-4/6 mx-auto gap-5 container px-5 py-24 mx-auto">
         <div className="container flex flex-col gap-5 py-8 ">
           {data.features.map((feature, index) => (
             <div
