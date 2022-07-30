@@ -24,7 +24,6 @@ const sectionComponents = {
 // //   ComponentSectionsBottomActions: BottomActions,
 // //   ComponentSectionsTestimonialsGroup: TestimonialsGroup,
   ComponentSectionsRichText: RichText,
-  Images: Images
 //   ComponentSectionsPricing: Pricing,
 //   ComponentSectionsLeadForm: LeadForm,
 }
