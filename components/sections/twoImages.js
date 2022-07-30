@@ -14,14 +14,14 @@ export default function twoImages({ data }) {
             <div class="w-16 h-1 rounded-full bg-[#813400] inline-flex"></div>
           </div>
         </div>
-        <div class="flex flex-wrap -mx-4 mb-5 text-center justify-center h-fit">
+        <div class="flex flex-wrap text-center -mx-4 justify-center h-fit">
           {data.images.data.map((image) => {
             return (
-              <div class="sm:w-1/3 md:mb-0 mb-10 px-4">
-                <div class="rounded-lg md:h-4/6 h-fit overflow-hidden">
+              <div class="w-1/4 md:mb-0 mb-10 px-4">
+                <div class="md:h-5/6 h-fit">
                   <img
-                    alt="content"
-                    class="object-cover object-center h-full w-full"
+                    alt="images"
+                    class="object-cover object-center h-full w-full rounded-lg"
                     src={`${getStrapiMedia(image.attributes.url)}`}
                   />
                 </div>
