@@ -39,9 +39,9 @@ export default function Location({ data }) {
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-s">
               HOURS
             </h2>
-            <p class="mt-1">MON - THURS: 11 AM - 7:30 PM</p>
-            <p class="mt-1">FRI: 11 AM - 8:00 PM</p>
-            <p class="mt-1">SAT: 11 AM - 8:00 PM</p>
+            <p class="mt-1">MON - THURS: 11am - 7:30pm</p>
+            <p class="mt-1">FRI: 11am - 8:00am</p>
+            <p class="mt-1">SAT: 11am - 8:00pm</p>
           </div>
           <a
             className=" with-arrow hover:underline md:ml-0 mx-auto"
