@@ -28,8 +28,8 @@ const Hero = ({ data }) => {
     //   </div>
     // </div>
     <>
-      <div className="md:h-[30rem] h-[20rem] md:mt-10 mt-5 w-5/6 mx-auto">
-        <Carousel slideInterval={8000}>
+      <div className="md:h-[45rem] h-[30rem] md:mt-10 mt-5 w-5/6 mx-auto">
+        <Carousel slideInterval={6000}>
           {data.picture.data.map((image) => {
             return (
               <img

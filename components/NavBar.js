@@ -25,7 +25,7 @@ const NavBar = ({ cart }) => {
     //         </div>
     <nav
       class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900"
-      style={{ backgroundColor: "rgba(129,52,0,255)" }}
+      style={{ backgroundColor: "rgba(129,52,0,255)", fontFamily: "Cooper Black" }}
     >
       <div class="container flex flex-wrap md: justify-between justify-center items-center mx-auto">
         <a href="/" class="flex items-center">
