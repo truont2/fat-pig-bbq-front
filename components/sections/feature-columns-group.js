@@ -24,7 +24,7 @@ const FeatureColumnsGroup = ({ data }) => {
     //   ))}
     // </div>
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-10 mx-auto">
+      <div class="container px-5 py-10 mx-auto" style={{fontFamily: "Cooper Black"}}>
         <div class="flex flex-col text-center w-full mb-10">
           <h1 class="text-4xl font-medium title-font text-gray-900 mb-5 text-center">
             Ordering Options

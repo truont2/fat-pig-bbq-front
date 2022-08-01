@@ -4,7 +4,7 @@ import styles from "../../styles/OtherLinks.module.css";
 
 function menuItems({ data }) {
   return (
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font" style={{fontFamily: "Cooper Black"}}>
       <h1 class="text-7xl font-medium title-font text-gray-900 mb-5 text-center py-5">
         Menu
       </h1>

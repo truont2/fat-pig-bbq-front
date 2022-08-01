@@ -86,7 +86,7 @@ export default function Contact() {
     //     </section>
     //   </div>
     // </form>
-    <section class="text-gray-600 body-font relative">
+    <section class="text-gray-600 body-font relative" style={{fontFamily: "Cooper Black"}}>
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-12">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
@@ -145,7 +145,8 @@ export default function Contact() {
               </button>
             </div>
             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <a class="text-indigo-500">fatbigbbq@gmail.com</a>
+              <a>fatbigbbq@gmail.com</a>
+              <p className="mt-3">(425) 361-7640</p>
               <p class="leading-normal my-5">
                 7533 Olympic View Drive
                 <br />
