@@ -5,7 +5,7 @@ import { ElfsightWidget } from "react-elfsight-widget";
 export default function Yelp({ data }) {
   return (
     // className={styles.container}
-    <div class="container px-5 py-10 mx-auto overflow-x-hidden">
+    <div class="container px-5 py-10 mx-auto overflow-x-hidden font-CooperBlack">
       <div class="text-center mb-10">
         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-2">
           {data.title}
