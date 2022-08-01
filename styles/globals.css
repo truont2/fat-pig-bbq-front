@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Cooper-Black";
+    src: local(''), url("../public/fonts/COOPBL.ttf")
+}
