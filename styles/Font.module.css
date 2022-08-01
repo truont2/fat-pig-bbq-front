@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Bebas+Neue&family=Corben:wght@700&family=Courgette&family=Lobster&family=Noto+Sans&display=swap');
+
+/* can now reference my font */
+.font {
+  font-family: 'Corben', cursive;
+}
