@@ -9,7 +9,7 @@ const RichText = ({ data }) => {
     <div className="container mx-auto px-4 pt-12 text-center font-CooperBlack">
       <h1 class="title-font sm:text-4xl md:text-6xl mb-5 font-medium text-gray-900 text-center">{data.title}</h1>
       <img
-        class="md:w-3/6 w-screen mb-10 object-cover object-center rounded mx-auto"
+        class="md:w-4/6 w-screen mb-10 object-cover object-center rounded mx-auto"
         alt="hero"
         src={`${getStrapiMedia(data.image.data.attributes.url)}`}
       />
