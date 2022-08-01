@@ -14,6 +14,7 @@ import menuItems from '../components/sections/menuItems'
 import Images from '../components/sections/twoImages'
 // Map Strapi sections to section components
 const sectionComponents = {
+  Images: Images,
   ComponentSectionsMenuItems: menuItems,
   Location: location,
   ComponentSectionsReviews: Yelp,

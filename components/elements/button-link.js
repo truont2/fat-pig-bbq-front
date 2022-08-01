@@ -8,7 +8,7 @@ const ButtonContent = ({ button, appearance, compact }) => {
     <div
       className={classNames(
         // Common classes
-        "w-1/6 text-center uppercase tracking-wide font-semibold text-base md:text-sm rounded-md mx-auto bg-[#813400] hover:bg-black text-white hover:text-white py-2 px-4 hover:border-transparent rounded",
+        "md:w-1/6 w-3/6 text-center uppercase tracking-wide font-semibold text-base md:text-sm rounded-md mx-auto bg-[#813400] hover:bg-black text-white hover:text-white py-2 px-4 hover:border-transparent rounded",
         // Full-size button
         {
           "px-8 py-4": compact === false,
