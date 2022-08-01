@@ -112,11 +112,11 @@ export default function twoImages({ data }) {
               <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
                 Shooting Stars
               </h2>
-              <p class="text-base leading-relaxed mt-2">
+              <h4 class="text-base leading-relaxed mt-2">
                 Swag shoivdigoitch literally meditation subway tile tumblr
                 cold-pressed. Gastropub street art beard dreamcatcher neutra,
                 ethical XOXO lumbersexual.
-              </p>
+              </h4>
               <a href="https://www.google.com/" class="text-indigo-500 inline-flex items-center mt-3">
                 Learn More
                 <svg
