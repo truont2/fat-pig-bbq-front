@@ -7,12 +7,12 @@ const Footer = () => {
         <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <img src="./assets/fatpiglogo.png" style={{ width: "40px" }} />
-            <span class="ml-3 text-xl">Fat Pig BBQ</span>
+            <span class="ml-3 text-xl font-CooperBlack">Fat Pig BBQ</span>
           </a>
         </div>
         <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 font-bold">
               COMPANY
             </h2>
             <nav class="list-none mb-10">
@@ -25,7 +25,7 @@ const Footer = () => {
             </nav>
           </div>
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 font-bold">
               DELIVERY/ORDER
             </h2>
             <nav class="list-none mb-10">
@@ -38,9 +38,9 @@ const Footer = () => {
               <li>
                 <a href="https://www.grubhub.com/restaurant/fat-pig-bbq-7533-olympic-view-dr-edmonds/970085" class="text-gray-600 hover:text-gray-800">GrubHub</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="" class="text-gray-600 hover:text-gray-800">SquareSpace</a>
-              </li>
+              </li> */}
             </nav>
           </div>
         </div>

@@ -17,35 +17,6 @@ function menuItems({ data }) {
           View a PDF Menu
         </a>
       </div>
-      {/* <div class="flex justify-start mx-auto px-5">
-        <div className="mx-10" href="/">
-          <a
-            href="./assets/menu.pdf"
-            target="_blank"
-            class={`text-lg ${styles.linkunderline}`}
-          >
-            View a PDF Menu
-          </a>
-        </div>
-        <div className="mx-10" href="/">
-          <a
-            href="./assets/menu.pdf"
-            target="_blank"
-            class={`text-lg ${styles.linkunderline}`}
-          >
-            View a PDF Menu
-          </a>
-        </div>
-        <div className="mx-10" href="/">
-          <a
-            href="./assets/menu.pdf"
-            target="_blank"
-            class={`text-lg ${styles.linkunderline}`}
-          >
-            View a PDF Menu
-          </a>
-        </div>
-      </div> */}
       <div>
         <div class="container px-5 pt-20 mx-auto">
           <h3 class="text-2xl font-medium title-font text-gray-900 mb-5 py-5">
@@ -57,10 +28,10 @@ function menuItems({ data }) {
               return (
                 <>
                   {item.type == "meal" ? (
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full" key={item.title}>
                       <a class="block relative h-48 rounded overflow-hidden">
                         <img
-                          alt="ecommerce"
+                          alt={item.title}
                           class="object-cover object-center w-full h-full block"
                           src={`${getStrapiMedia(
                             item.image.data.attributes.url
@@ -93,7 +64,7 @@ function menuItems({ data }) {
               return (
                 <>
                   {item.type == "sides" ? (
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full" key={item.title}>
                       <a class="block relative h-48 rounded overflow-hidden">
                         <img
                           alt="ecommerce"
@@ -129,7 +100,7 @@ function menuItems({ data }) {
               return (
                 <>
                   {item.type == "beverages" ? (
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full" key={item.title}>
                       <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-2xl font-medium">
                           {item.title}

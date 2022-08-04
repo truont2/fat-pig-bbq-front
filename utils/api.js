@@ -51,8 +51,6 @@ export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
     throw new Error(`An error occured please try again`)
   }
   const data = await response.json()
-
-  console.log(data, "fetch request data");
   return data
 }
 

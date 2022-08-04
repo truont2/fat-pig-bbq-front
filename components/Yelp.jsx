@@ -7,7 +7,7 @@ export default function Yelp({ data }) {
     // className={styles.container}
     <div class="container px-5 py-10 mx-auto overflow-x-hidden font-CooperBlack">
       <div class="text-center mb-10">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-2">
+        <h1 class="text-4xl font-medium title-font text-gray-900 mb-5 text-center">
           {data.title}
         </h1>
         <div class="flex mt-6 justify-center">

@@ -20,7 +20,7 @@ export default function DynamicPage({
   // Check if the required data was provided
   if (!router.isFallback && !sections?.length) {
     // return <ErrorPage statusCode={404} />;
-    return <h1>Broken</h1>
+    return <h1 className="text-center text-7xl">This page does not exist. Please return to the main page. Thank you!</h1>
   }
 
   // Loading screen (only possible in preview mode)
@@ -60,7 +60,6 @@ export default function DynamicPage({
 
 // tell next.js how many pages there are
 export async function getStaticPaths(context) {
-  console.log(context, "context");
   // attempt to work on the multiple lanugauage part
   const pages = await context.locales.reduce(
     async (currentPagesPromise, locale) => {
@@ -74,11 +73,7 @@ export async function getStaticPaths(context) {
     },
     Promise.resolve([])
   );
-  // console.log(languages, "pages that should be created");
-  // const res = await fetch("http://localhost:1337/api/pages?populate=deep");
-  // const pages = await res.json();
-  //   works for just english to get the results we want
-  console.log(pages, "pages. fat pig");
+
   const paths = pages.map((page) => {
     const { slug, locale } = page.attributes;
     const slugArray = !slug ? false : slug.split("/");
@@ -87,7 +82,7 @@ export async function getStaticPaths(context) {
       locale,
     };
   });
-  console.log(paths, "fatpig");
+
   return {
     paths,
     fallback: true,
@@ -97,20 +92,12 @@ export async function getStaticPaths(context) {
 // for each individual page: get the data for that page
 export async function getStaticProps(context) {
   const { params, locale, locales, defaultLocale, preview = null } = context;
-  //  fetch by slug
-  // ?filters[slug]=my-article-slug
-  // ?filters[slug][$eq]=my-article-slug
-  // http://localhost:1337/api/pages?filters\[Slug\][$eq]=&[populate]=deep
+
   const globalLocale = await getGlobalData(locale);
-  console.log(globalLocale, "global Locale");
+
   // getting local data for page
-  console.log(params.slug);
   const slugString = (!params.slug ? ["homepage"] : params.slug).join("/");
-  console.log(slugString, "slug");
-  console.log(
-    `http://localhost:1337/api/pages?filters[slug][$eq]=${slugString}&[populate]=deep`,
-    "fetch request"
-  );
+
   const res = await fetch(
     `http://localhost:1337/api/pages?filters[slug][$eq]=${slugString}&[populate]=deep`,
     {
@@ -123,9 +110,7 @@ export async function getStaticProps(context) {
     }
   );
   const data = await res.json();
-  console.log(data, "page data =======");
   const pageData = data.data[0];
-  console.log(pageData, "==========");
   if (pageData == null) {
     // Giving the page no props will trigger a 404 page
     return { props: {} };
@@ -143,7 +128,6 @@ export async function getStaticProps(context) {
   };
 
   const localizedPaths = getLocalizedPaths(pageContext);
-  console.log("---------", localizedPaths);
   return {
     props: {
       preview,

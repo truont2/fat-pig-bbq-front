@@ -12,7 +12,7 @@ export default function Location({ data }) {
   return (
     <section class="text-gray-600 body-font relative container px-5 py-10 mx-auto font-CooperBlack">
       <div class=" text-center mb-0">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-2">
+        <h1 class="text-4xl font-medium title-font text-gray-900 mb-5 text-center">
           Location and Hours
         </h1>
         <div class="flex mt-6 justify-center">
