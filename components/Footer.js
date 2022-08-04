@@ -38,9 +38,9 @@ const Footer = () => {
               <li>
                 <a href="https://www.grubhub.com/restaurant/fat-pig-bbq-7533-olympic-view-dr-edmonds/970085" class="text-gray-600 hover:text-gray-800">GrubHub</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="" class="text-gray-600 hover:text-gray-800">SquareSpace</a>
-              </li>
+              </li> */}
             </nav>
           </div>
         </div>

@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        CooperBlack: ['Cooper-Black']
+        CooperBlack: ['Cooper-Black'],
+        Copperplate: ['Copperplate']
       }
     },
   },
