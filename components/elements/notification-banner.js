@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md"
 const NotificationBanner = ({ data: { text, type, status }, closeSelf }) => {
   return (
     <>
-    {status ?  <div
+    {status ? <div
       className={classNames(
         // Common classes
         "text-white px-2 py-2",
@@ -25,7 +25,8 @@ const NotificationBanner = ({ data: { text, type, status }, closeSelf }) => {
           <MdClose className="h-6 w-auto" color="#fff" />
         </button>
       </div>
-    </div> : ""}
+    </div>
+  : ""}
     </>
   )
 }
