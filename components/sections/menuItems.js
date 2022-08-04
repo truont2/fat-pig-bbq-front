@@ -28,10 +28,10 @@ function menuItems({ data }) {
               return (
                 <>
                   {item.type == "meal" ? (
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full" key={item.title}>
                       <a class="block relative h-48 rounded overflow-hidden">
                         <img
-                          alt="ecommerce"
+                          alt={item.title}
                           class="object-cover object-center w-full h-full block"
                           src={`${getStrapiMedia(
                             item.image.data.attributes.url
@@ -64,7 +64,7 @@ function menuItems({ data }) {
               return (
                 <>
                   {item.type == "sides" ? (
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full" key={item.title}>
                       <a class="block relative h-48 rounded overflow-hidden">
                         <img
                           alt="ecommerce"
@@ -100,7 +100,7 @@ function menuItems({ data }) {
               return (
                 <>
                   {item.type == "beverages" ? (
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full" key={item.title}>
                       <div class="mt-4">
                         <a class="block relative h-48 rounded overflow-hidden">
                           <img

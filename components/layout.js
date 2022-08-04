@@ -1,9 +1,5 @@
 import { useState, useEffect } from "react"
-import Navbar from "./NavBar"
-// import Footer from "./elements/footer"
 import NotificationBanner from "./elements/notification-banner"
-import { setRequestMeta } from "next/dist/server/request-meta";
-// import AlertItem from './AlertItem';
 const Layout = ({ children, global, pageContext }) => {
   const { navbar, footer, notificationBanner } = global.attributes;
 
