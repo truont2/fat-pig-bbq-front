@@ -39,7 +39,7 @@ const FeatureColumnsGroup = ({ data }) => {
             Order online and have the food delivered or pick it up yourself in-store!
           </p> */}
         </div>
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap justify-center">
           {data.features.map((feature) => (
             <div class="xl:w-1/4 lg:w-1/2 md:w-full  px-8 py-6 sm:border-l-2 border-gray-200 border-opacity-60 flex flex-col justify-between">
               <div>

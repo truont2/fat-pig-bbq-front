@@ -4,7 +4,7 @@ import styles from "../../styles/OtherLinks.module.css";
 
 function menuItems({ data }) {
   return (
-    <section class="text-gray-600 body-font" style={{fontFamily: "Cooper Black"}}>
+    <section class="text-gray-600 body-font font-CooperBlack">
       <h1 class="text-7xl font-medium title-font text-gray-900 mb-5 text-center py-5">
         Menu
       </h1>
@@ -17,39 +17,10 @@ function menuItems({ data }) {
           View a PDF Menu
         </a>
       </div>
-      {/* <div class="flex justify-start mx-auto px-5">
-        <div className="mx-10" href="/">
-          <a
-            href="./assets/menu.pdf"
-            target="_blank"
-            class={`text-lg ${styles.linkunderline}`}
-          >
-            View a PDF Menu
-          </a>
-        </div>
-        <div className="mx-10" href="/">
-          <a
-            href="./assets/menu.pdf"
-            target="_blank"
-            class={`text-lg ${styles.linkunderline}`}
-          >
-            View a PDF Menu
-          </a>
-        </div>
-        <div className="mx-10" href="/">
-          <a
-            href="./assets/menu.pdf"
-            target="_blank"
-            class={`text-lg ${styles.linkunderline}`}
-          >
-            View a PDF Menu
-          </a>
-        </div>
-      </div> */}
       <div>
-        <div class="container px-5 pt-20 mx-auto">
+        <div class="container px-5 pt-5 mx-auto">
           <h3 class="text-2xl font-medium title-font text-gray-900 mb-5 py-5">
-            Menu
+            Meals
           </h3>
           <div class="flex flex-wrap -m-4">
             {/* map through the data twice for two sections menu and sides */}
@@ -121,7 +92,7 @@ function menuItems({ data }) {
         </div>
         <div class="container px-5 py-10 mx-auto">
           <h3 class="text-2xl font-medium title-font text-gray-900 mb-5 py-5">
-            beverages
+            Beverages
           </h3>
           <div class="flex flex-wrap -m-4">
             {/* map through the data twice for two sections menu and sides */}
@@ -131,6 +102,15 @@ function menuItems({ data }) {
                   {item.type == "beverages" ? (
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                       <div class="mt-4">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                          <img
+                            alt="ecommerce"
+                            class="object-contain object-left w-full h-full block"
+                            src={`${getStrapiMedia(
+                              item.image.data.attributes.url
+                            )}`}
+                          />
+                        </a>
                         <h2 class="text-gray-900 title-font text-2xl font-medium">
                           {item.title}
                         </h2>
