@@ -31,17 +31,6 @@ const FeatureColumnsGroup = ({ data }) => {
                 <button class="bg-[#813400] hover:bg-black text-white font-semibold hover:text-white py-2 px-4 border  hover:border-transparent rounded">
                   {feature.link.text}
                 </button>
-                {/* <svg
-                  fill="none"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg> */}
               </a>
             </div>
           ))}

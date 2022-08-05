@@ -5,21 +5,27 @@ import styles from "../../styles/OtherLinks.module.css";
 function menuItems({ data }) {
   return (
     <section class="text-gray-600 body-font font-CooperBlack">
-      <h1 class="text-7xl font-medium title-font text-gray-900 mb-5 text-center py-5">
-        Menu
-      </h1>
-      <div class="mx-auto text-gray-900 text-center" href="/">
-        <a
-          href="./assets/menu.pdf"
-          target="_blank"
-          class={`text-lg ${styles.linkunderline} `}
-        >
-          View a PDF Menu
-        </a>
+      <div class="relative w-screen bg-black overflow-hidden">
+        <img
+          class="w-screen md:h-80 h-50 object-cover object-center opacity-70"
+          src={`${getStrapiMedia(data.heroImage.data.attributes.url)}`}
+        />
+        <div class="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <h1 class="md:text-7xl text-4xl font-medium title-font text-center">Menu</h1>
+          <div class="mx-auto text-center" href="/">
+            <a
+              href="./assets/menu.pdf"
+              target="_blank"
+              class={`md:text-lg text-base ${styles.linkunderline}`}
+            >
+              View a PDF Menu
+            </a>
+          </div>
+        </div>
       </div>
       <div>
         <div class="container px-5 pt-5 mx-auto">
-          <h3 class="text-2xl font-medium title-font text-gray-900 mb-5 py-5">
+          <h3 class="text-2xl font-medium title-font text-gray-900 mb-5 py-5 md:text-left text-center">
             Meals
           </h3>
           <div class="flex flex-wrap -m-4">
@@ -55,7 +61,7 @@ function menuItems({ data }) {
           </div>
         </div>
         <div class="container px-5 pt-10 mx-auto">
-          <h3 class="text-2xl font-medium title-font text-gray-900 mb-5 py-5">
+          <h3 class="text-2xl font-medium title-font text-gray-900 mb-5 py-5 md:text-left text-center">
             Sides
           </h3>
           <div class="flex flex-wrap -m-4">
@@ -91,7 +97,7 @@ function menuItems({ data }) {
           </div>
         </div>
         <div class="container px-5 py-10 mx-auto">
-          <h3 class="text-2xl font-medium title-font text-gray-900 mb-5 py-5">
+          <h3 class="text-2xl font-medium title-font text-gray-900 mb-5 py-5 md:text-left text-center">
             Beverages
           </h3>
           <div class="flex flex-wrap -m-4">
