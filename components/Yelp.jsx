@@ -5,13 +5,13 @@ import { ElfsightWidget } from "react-elfsight-widget";
 export default function Yelp({ data }) {
   return (
     // className={styles.container}
-    <div class="container px-5 py-10 mx-auto overflow-x-hidden font-CooperBlack">
-      <div class="text-center mb-10">
-        <h1 class="text-4xl font-medium title-font text-gray-900 mb-5 text-center">
+    <div className="container px-5 py-10 mx-auto overflow-x-hidden font-CooperBlack">
+      <div className="text-center mb-10">
+        <h1 className="text-4xl font-medium title-font text-gray-900 mb-5 text-center">
           {data.title}
         </h1>
-        <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-[#813400] inline-flex"></div>
+        <div className="flex mt-6 justify-center">
+            <div className="w-16 h-1 rounded-full bg-[#813400] inline-flex"></div>
           </div>
       </div>
       <div className={styles.component}>

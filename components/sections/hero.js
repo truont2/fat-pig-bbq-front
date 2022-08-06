@@ -21,7 +21,7 @@ const Hero = ({ data }) => {
               key={idx}
                 src={`${getStrapiMedia(image.attributes.url)}`}
                 alt="fat pig bbq images"
-                class="object-cover object-center h-full w-full"
+                className="object-cover object-center h-full w-full"
               />
             );
           })}
