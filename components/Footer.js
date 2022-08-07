@@ -20,7 +20,7 @@ const Footer = () => {
                 <a href="/about-page" className="text-gray-600 hover:text-gray-800">About Us</a>
               </li>
               <li>
-                <a href="/contact"className="text-gray-600 hover:text-gray-800">Careers</a>
+                <a href="/contact"className="text-gray-600 hover:text-gray-800">Contact</a>
               </li>
             </nav>
           </div>
@@ -52,7 +52,7 @@ const Footer = () => {
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
           <a className="text-gray-500" href={process.env.NEXT_PUBLIC_STRAPI_URL_ADMIN}>
-              Admin
+              
             </a>
             <a className="text-gray-500 ml-3" href="https://www.facebook.com/myfatpigbbq">
               <svg
