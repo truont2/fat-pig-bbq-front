@@ -11,6 +11,7 @@ import image from "../../public/assets/grubhub.jpg";
 import { Carousel } from "flowbite-react";
 const Hero = ({ data }) => {
   const router = useRouter();
+  console.log()
   return (
     <>
       <div className="md:h-[40rem] h-[15rem] md:mt-10 mt-5 w-5/6 mx-auto">
