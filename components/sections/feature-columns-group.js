@@ -14,7 +14,7 @@ const FeatureColumnsGroup = ({ data }) => {
         </div>
         <div className="flex flex-wrap justify-center">
           {data.features.map((feature, idx) => (
-            <div className="xl:w-1/4 lg:w-1/2 w-full  px-8 py-6 sm:border-l-2 border-gray-200 border-opacity-60 flex flex-col justify-between" key={idx}>
+            <div className="xl:w-1/4 lg:w-1/2 w-full px-8 py-6 sm:border-l-2 border-gray-200 border-opacity-60 flex flex-col justify-between" key={idx}>
               <div>
                 <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                   {feature.title}
