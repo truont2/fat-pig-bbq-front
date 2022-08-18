@@ -32,7 +32,6 @@ const sectionComponents = {
 // Display a section individually
 const Section = ({ sectionData }) => {
   // Prepare the component
-  console.log(sectionData.SectionName, "supposed type name");
   const SectionComponent = sectionComponents[sectionData.SectionName]
 
   if (!SectionComponent) {
