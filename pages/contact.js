@@ -1,7 +1,12 @@
 import React from "react";
+import Head from "next/head";
 
 export default function Contact() {
   return (
+    <div>
+    <Head>
+      <title>Contact Us</title>
+    </Head>
     <section class="text-gray-600 body-font relative font-CooperBlack">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-12">
@@ -78,5 +83,6 @@ export default function Contact() {
         </div>
       </div>
     </section >
+    </div>
   );
 }
