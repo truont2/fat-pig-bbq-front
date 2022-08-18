@@ -99,7 +99,7 @@ export async function getStaticProps(context) {
   const slugString = (!params.slug ? ["homepage"] : params.slug).join("/");
 
   const res = await fetch(
-    `http://localhost:1337/api/pages?filters[slug][$eq]=${slugString}&[populate]=deep`,
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/pages?filters[slug][$eq]=${slugString}&[populate]=deep`,
     {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
       headers: {
