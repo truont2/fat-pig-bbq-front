@@ -10,6 +10,9 @@ const nextConfig = {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
   },
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
 }
 
 module.exports = nextConfig
