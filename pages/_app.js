@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import styles from "../styles/globals.css";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -33,22 +34,48 @@ function MyApp({ Component, pageProps }) {
   };
 
   useEffect(() => {
-    import('flowbite');
+    import("flowbite");
   }, []);
 
-  
   return (
-    <div className="bg-[#FAF9F6]">
-      <NavBar key={reloadKey} cart={cart} />
-      <Component
-        cart={cart}
-        removeFromCart={removeFromCart}
-        addToCart={addToCart}
-        clearCart={clearCart}
-        {...pageProps}
-      />
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="../public/apple-touch-icon.png"
+        />
+        <link 
+          rel="icon"
+          type="image/x-icon"
+          href="favicon.ico"
+          />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="../public/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="../public/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../public/site.webmanifest" />
+      </Head>
+      <div className="bg-[#FAF9F6]">
+        <NavBar key={reloadKey} cart={cart} />
+        <Component
+          cart={cart}
+          removeFromCart={removeFromCart}
+          addToCart={addToCart}
+          clearCart={clearCart}
+          {...pageProps}
+        />
+        <Footer />
+      </div>
+    </>
   );
 }
 
