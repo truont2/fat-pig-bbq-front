@@ -12,6 +12,7 @@ const Map = () => {
       zoom={14}
       scrollWheelZoom={true}
       style={{ height: "100%",width: "100%", zIndex: 0}}
+      apiKey={`${process.env.STADIA_API_KEY}`}
     >
       <TileLayer
         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
