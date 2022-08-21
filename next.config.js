@@ -4,7 +4,8 @@ const nextConfig = {
   swcMinify: true,
   env: {
     MAPBOX_ACCESS_TOKEN:
-      "[MAPBOX_TOKEN_HERE]"
+      "[MAPBOX_TOKEN_HERE]", 
+      STADIA_API_KEY: process.env.STADIA_API_KEY
   },
   i18n: {
     locales: ['en', 'fr'],
