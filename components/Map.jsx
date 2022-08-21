@@ -15,7 +15,7 @@ const Map = () => {
     >
       <TileLayer
         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-        url={"https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?"+ process.env.STADIA_API_KEY}
+        url={"https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key="+ process.env.STADIA_API_KEY}
       />
       <Marker position={location} draggable={false} animate={true}>
         <Popup>7533 Olympic View Dr, Edmonds, WA 98026</Popup>
