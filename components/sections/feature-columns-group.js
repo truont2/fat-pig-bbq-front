@@ -3,8 +3,8 @@ import NextImage from "../elements/image";
 const FeatureColumnsGroup = ({ data }) => {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 md:py-10 py-5 mx-auto font-CooperBlack">
-        <div className="flex flex-col text-center w-full mb-10">
+      <div className="container px-5 md:py-10 pt-5 mx-auto font-CooperBlack">
+        <div className="flex flex-col text-center w-full md:mb-10">
           <h1 className="text-4xl font-medium title-font text-gray-900 mb-5 text-center">
             Ordering Options
           </h1>

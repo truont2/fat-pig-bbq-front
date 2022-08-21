@@ -24,8 +24,8 @@ function menuItems({ data }) {
         </div>
       </div>
       <div>
-        <div className="container px-5 pt-5 mx-auto">
-          <h3 className="text-2xl font-medium title-font text-gray-900 mb-5 py-5 md:text-left text-center">
+        <div className="container px-5 pt-5 mx-auto" key="meals">
+          <h3 className="text-2xl font-medium title-font text-gray-900 mb-5 pt-5 md:text-left text-center">
             Meals
           </h3>
           <div className="flex flex-wrap -m-4">
@@ -60,8 +60,8 @@ function menuItems({ data }) {
             })}
           </div>
         </div>
-        <div className="container px-5 pt-10 mx-auto">
-          <h3 className="text-2xl font-medium title-font text-gray-900 mb-5 py-5 md:text-left text-center">
+        <div className="container px-5 pt-10 mx-auto" key="sides">
+          <h3 className="text-2xl font-medium title-font text-gray-900 mb-5 pt-5 md:text-left text-center">
             Sides
           </h3>
           <div className="flex flex-wrap -m-4">
@@ -96,8 +96,8 @@ function menuItems({ data }) {
             })}
           </div>
         </div>
-        <div className="container px-5 py-10 mx-auto">
-          <h3 className="text-2xl font-medium title-font text-gray-900 mb-5 py-5 md:text-left text-center">
+        <div className="container px-5 py-10 mx-auto" key="beverages">
+          <h3 className="text-2xl font-medium title-font text-gray-900 mb-5 py=t-5 md:text-left text-center">
             Beverages
           </h3>
           <div className="flex flex-wrap -m-4">
@@ -106,18 +106,18 @@ function menuItems({ data }) {
               return (
                 <>
                   {item.type == "beverages" ? (
-                    <div className="lg:w-1/4 md:w-1/2 p-4 w-full" key={item.title}>
+                    <div className="lg:w-1/4 md:w-1/2 p-4 w-full " key={item.title}>
                       <div className="mt-4">
                         <a className="block relative h-48 rounded overflow-hidden">
                           <img
                             alt="ecommerce"
-                            className="object-contain object-left w-full h-full block"
+                            className="object-cover md:object-left object-center w-full h-full block"
                             src={`${getStrapiMedia(
                               item.image.data.attributes.url
                             )}`}
                           />
                         </a>
-                        <h2 className="text-gray-900 title-font text-2xl font-medium">
+                        <h2 className="text-gray-900 title-font text-2xl font-medium ">
                           {item.title}
                         </h2>
                         <p className="mt-1">${item.price}</p>

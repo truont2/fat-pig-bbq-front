@@ -7,7 +7,7 @@ const FeatureRowsGroup = ({ data }) => {
   return (
     <section className="text-gray-600 body-font">
       {data.features.map((feature, index) => (
-        <div className="container px-5 py-5 mx-auto flex flex-col">
+        <div className="container px-5 py-5 mx-auto flex flex-col" key={index}>
           <div className="lg:w-4/6 mx-auto">
             <div className="flex flex-col sm:flex-row mt-10">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
