@@ -19,7 +19,7 @@ export default function Location({ data }) {
           <div className="w-16 h-1 rounded-full bg-[#813400] inline-flex"></div>
         </div>
       </div>
-      <div className="container px-5 py-16 mx-auto flex sm:flex-nowrap flex-wrap md:text-start text-center">
+      <div className="container px-5 md:py-16 py-5 mx-auto flex sm:flex-nowrap flex-wrap md:text-start text-center">
         <div className="lg:w-2/3 md:w-1/2 w-screen h-80 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <div className="absolute inset-0 bg-gray-300">
             <MapWithNoSSR />
