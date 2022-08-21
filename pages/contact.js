@@ -70,8 +70,8 @@ export default function Contact() {
                 </button>
               </div>
               <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a>fatbigbbq@yahoo.com</a>
-                <p className="mt-3">(425) 361-7640</p>
+                <a href="mailto:fatbigbbq@yahoo.com">fatbigbbq@yahoo.com</a><br />
+                <a href="tel:4253617640" className="mt-3">(425) 361-7640</a>
                 <p class="leading-normal my-5">
                   7533 Olympic View Drive
                   <br />
