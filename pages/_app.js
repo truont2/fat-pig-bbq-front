@@ -5,10 +5,6 @@ import styles from "../styles/globals.css";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    console.log("I am useEffect from app.js");
-  }, []);
-
   const [cart, setCart] = useState([]);
   const [reloadKey, setReloadKey] = useState(1);
 
