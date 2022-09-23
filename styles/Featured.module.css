@@ -19,13 +19,14 @@
   }
   
   .wrapper {
-    width: 300%;
     height: 100%;
+    /* without display flex, the items will stack on top of each other */
     display: flex;
     transition: all 1.5s ease-in-out ;
+    /* making the width: 3x or x * number of items, then you can make it seem like its a carousel of evenly spaced items */
   }
   
-  .imgContainer {
+  .reviewContainer {
     width: 100%;
     height: 100%;
     position: relative;
@@ -33,9 +34,11 @@
     justify-content: center;
     align-items: center;
   }
+
   
   @media screen and (max-width: 480px) {
     .container{
       height: 50vh;
     }
   }
+
