@@ -40,7 +40,7 @@ export default function Location({ data }) {
               HOURS
             </h2>
             <p className="mt-1">Mon - Thurs: 11am - 7:30pm</p>
-            <p className="mt-1">Fri: 11am - 8:00am</p>
+            <p className="mt-1">Fri: 11am - 8:00pm</p>
             <p className="mt-1">Sat: 11am - 8:00pm</p>
           </div>
           <a
