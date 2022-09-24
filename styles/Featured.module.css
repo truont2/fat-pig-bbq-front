@@ -1,0 +1,67 @@
+.container {
+    width: 70vw;
+    overflow: hidden;
+    height:fit-content;
+    position: relative;
+  }
+  
+  .arrowContainer {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    bottom: 0;
+    top: 0;
+    
+    margin: auto;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper {
+    height: fit-content;
+    /* without display flex, the items will stack on top of each other */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out ;
+    /* making the width: 3x or x * number of items, then you can make it seem like its a carousel of evenly spaced items */
+  }
+  
+  .reviewContainer {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  @media screen and (max-width: 480px) {
+    .arrowContainer{
+      margin: 0;
+      opacity: 0.3;
+    }
+  }
+
+
+  .btnSlide {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    border: 1px solid rgba(34, 34, 34, 0.287);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #f1f1f1;
+  }
+
+.btnSlide:active {
+  transform: scale(1.2);
+}
