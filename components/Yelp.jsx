@@ -13,7 +13,7 @@ import Slider from "./Slider";
 export default function Yelp({ data }) {
   return (
     <div className="px-5 pt-10 mx-auto overflow-x-hidden font-CooperBlack">
-      <div className="text-center mb-10">
+      <div className="text-center mb-2">
         <h1 className="text-4xl font-medium title-font text-gray-900 mb-5 text-center">
           {data.title}
           
