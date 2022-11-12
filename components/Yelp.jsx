@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/Yelp.module.css";
-import { ElfsightWidget } from "react-elfsight-widget";
 import { Carousel } from "flowbite-react";
 import { useRef, useState } from "react";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
