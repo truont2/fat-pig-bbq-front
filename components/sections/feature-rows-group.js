@@ -19,15 +19,15 @@ const FeatureRowsGroup = ({ data }) => {
                   />
                 </div>
                 <div className="flex flex-col items-center text-center justify-center">
-                  <h2 className="font-medium title-font mt-4 text-gray-900 text-lg font-CooperBlack">
+                  <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
                     Bao Truong
                   </h2>
                   <div className="w-12 h-1 bg-[#813400] rounded mt-2 mb-4 "></div>
-                  <p className="text-base font-CooperBlack">Owner and Founder of Fat Pig BBQ</p>
+                  <p className="text-base">Owner and Founder of Fat Pig BBQ</p>
                 </div>
               </div>
               <div className="flex items-center sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p className="leading-relaxed text-lg mb-4 text-zinc-700 font-CooperBlack">
+                <p className="leading-relaxed text-lg mb-4 text-zinc-700">
                   {feature.description}
                 </p>
               </div>

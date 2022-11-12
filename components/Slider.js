@@ -74,7 +74,7 @@ const Featured = () => {
         {reviews.map((review, index) => (
         <div className={styles.reviewContainer} key={index}>
             <section className="text-gray-600 body-font">
-              <div className="container md:px-5 mx-auto">
+              <div className="container md:px-5 mx-auto font-ComicNeue">
                 <div className="xl:w-4/6 lg:w-3/4 w-full mx-auto text-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ const Featured = () => {
                         {review.review}
                   </p>
                   <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-4 mb-2 bg-[#813400]"></span>
-                  <h2 className="text-gray-900 font-medium title-font tracking-wider md:text-lg text-sm">
+                  <h2 className="text-gray-900 font-medium title-font tracking-wider md:text-lg text-sm ">
                     {review.name}
                   </h2>
 

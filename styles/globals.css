@@ -11,3 +11,9 @@
     font-family: "Copperplate";
     src: local(''), url("../public/fonts/Copperplate.ttf")
 }
+
+@font-face {
+    font-family: "ComicNeue";
+    src: local(''), url("../public/fonts/ComicNeue-Regular.ttf")
+}
+

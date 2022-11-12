@@ -13,7 +13,7 @@ const RichText = ({ data }) => {
         alt="hero"
         src={`${getStrapiMedia(data.image.data.attributes.url)}`}
       />
-      <section className="text-zinc-700 body-font font-CooperBlack">
+      <section className="text-zinc-700 body-font font-ComicNeue">
         <div className="container px-5 mx-auto">
           <div className="w-5/6 mx-auto text-center">
             <p className="leading-relaxed md:text-2xl text-lg">
