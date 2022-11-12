@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         CooperBlack: ['Cooper-Black'],
-        Copperplate: ['Copperplate']
+        Copperplate: ['Copperplate'], 
+        ComicNeue:['ComicNeue']
       }
     },
   },

@@ -12,7 +12,7 @@ const FeatureColumnsGroup = ({ data }) => {
             <div className="w-16 h-1 rounded-full bg-[#813400] inline-flex"></div>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center font-ComicNeue">
           {data.features.map((feature, idx) => (
             <div className="xl:w-1/4 lg:w-1/2 w-full px-8 py-6 sm:border-l-2 border-gray-200 border-opacity-60 flex flex-col justify-between" key={idx}>
               <div>
