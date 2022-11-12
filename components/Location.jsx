@@ -3,16 +3,15 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 import dynamic from "next/dynamic";
 import CustomLink from "../components/elements/custom-link";
-//TODO: Render map and Hours of Op in the grid below.
+
 export default function Location({ data }) {
   const MapWithNoSSR = dynamic(() => import("../components/Map"), {
     ssr: false,
   });
-  // moment(time, "HH:mm:ss").format("hh:mm A")
   return (
     <section className="text-gray-600 body-font relative container px-5 py-10 mx-auto">
       <div className=" text-center mb-0">
-        <h1 className="text-4xl font-medium title-font text-gray-900 mb-5 text-center">
+        <h1 className="text-4xl font-medium title-font text-gray-900 mb-5 text-center font-CooperBlack">
           Location and Hours
         </h1>
         <div className="flex mt-6 justify-center">
