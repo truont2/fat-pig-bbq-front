@@ -103,7 +103,6 @@ export async function getStaticProps(context) {
   const dev = process.env.NODE_ENV !== 'production';
   const server = dev ? 'http://localhost:1337' : process.env.NEXT_PUBLIC_STRAPI_URL;
 
-  console.log(process.env.NODE_ENV, server, dev, "server link");
   const { params, locale, locales, defaultLocale, preview = null } = context;
 
   const globalLocale = await getGlobalData(locale);

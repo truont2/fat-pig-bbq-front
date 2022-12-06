@@ -18,7 +18,7 @@ export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
 
   const dev = process.env.NODE_ENV !== 'production';
   const server = dev ? 'http://localhost:1337' : process.env.NEXT_PUBLIC_STRAPI_URL;
-  console.log(process.env.NODE_ENV, server, dev, "server link");
+
 
   // Build request URL
   const queryString = qs.stringify(urlParamsObject)
