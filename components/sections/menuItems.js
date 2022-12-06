@@ -1,6 +1,6 @@
 import React from "react";
 import { getStrapiMedia } from "../../utils/media";
-import styles from "../../styles/OtherLinks.module.css";
+import styles from "../../styles/Navbar.module.css";
 
 function menuItems({ data }) {
   return (
@@ -11,7 +11,7 @@ function menuItems({ data }) {
           src={`${getStrapiMedia(data.heroImage.data.attributes.url)}`}
         />
         <div className="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <h1 className="md:text-7xl text-4xl font-medium title-font text-center">Menu</h1>
+          <h1 className="md:text-7xl text-4xl font-medium title-font text-center font-CooperBlack">Menu</h1>
           <div className="mx-auto text-center" href="/">
             <a
               href="./assets/menu.pdf"
@@ -25,7 +25,7 @@ function menuItems({ data }) {
       </div>
       <div>
         <div className="container px-5 pt-5 mx-auto" key="meals">
-          <h3 className="text-2xl font-medium title-font text-gray-900 mb-5 pt-5 md:text-left text-center">
+          <h3 className="text-2xl font-medium title-font  mb-5 pt-5 md:text-left text-center font-CooperBlack text-[#212427]">
             Meals
           </h3>
           <div className="flex flex-wrap -m-4">
@@ -61,7 +61,7 @@ function menuItems({ data }) {
           </div>
         </div>
         <div className="container px-5 pt-10 mx-auto" key="sides">
-          <h3 className="text-2xl font-medium title-font text-gray-900 mb-5 pt-5 md:text-left text-center">
+          <h3 className="text-2xl font-medium title-font font-CooperBlack text-[#212427] mb-5 pt-5 md:text-left text-center">
             Sides
           </h3>
           <div className="flex flex-wrap -m-4">
@@ -97,7 +97,7 @@ function menuItems({ data }) {
           </div>
         </div>
         <div className="container px-5 py-10 mx-auto" key="beverages">
-          <h3 className="text-2xl font-medium title-font text-gray-900 mb-5 py=t-5 md:text-left text-center">
+          <h3 className="text-2xl font-medium title-font font-CooperBlack text-[#212427] mb-5 py=t-5 md:text-left text-center">
             Beverages
           </h3>
           <div className="flex flex-wrap -m-4">
