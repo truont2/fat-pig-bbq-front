@@ -5,7 +5,7 @@ import CustomLink from "../elements/custom-link";
 import { getStrapiMedia } from "../../utils/media";
 const FeatureRowsGroup = ({ data }) => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font font-Roboto">
       {data.features.map((feature, index) => (
         <div className="container px-5 py-5 mx-auto flex flex-col" key={index}>
           <div className="lg:w-4/6 mx-auto">

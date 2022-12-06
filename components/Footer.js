@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-gray-400 body-font" style={{fontFamily: "Arial"}}>
+    <footer className="text-gray-400 body-font font-Roboto">
       <div className="container px-5 mb-4 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <img src="./assets/fatpiglogo.png" style={{ width: "40px" }} />
-            <span className="ml-3 text-xl font-CooperBlack">Fat Pig BBQ</span>
+            <span className="ml-3 text-xl text-[#212427] font-CooperBlack">Fat Pig BBQ</span>
           </a>
         </div>
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
@@ -51,8 +51,8 @@ const Footer = () => {
             © 2022 Fat Pig BBQ, All Rights Reserved
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-          <a className="text-gray-500" href={process.env.NEXT_PUBLIC_STRAPI_URL_ADMIN}>
-              
+          <a className="text-gray-500" href={`${process.env.NEXT_PUBLIC_STRAPI_URL}/admin`}>
+              Admin
             </a>
             <a className="text-gray-500 ml-3" href="https://www.facebook.com/myfatpigbbq">
               <svg

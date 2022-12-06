@@ -4,7 +4,7 @@ import styles from "../../styles/OtherLinks.module.css";
 
 function menuItems({ data }) {
   return (
-    <section className="text-gray-600 body-font font-ComicNeue">
+    <section className="text-gray-600 body-font font-Roboto">
       <div className="relative w-screen bg-black overflow-hidden">
         <img
           className="w-screen md:h-80 h-50 object-cover object-center opacity-70"
