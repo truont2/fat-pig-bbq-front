@@ -7,17 +7,17 @@ export default function Contact() {
     <Head>
       <title>Contact Us</title>
     </Head>
-    <section class="text-gray-600 body-font relative font-CooperBlack">
+    <section class="text-gray-600 body-font relative font-Roboto">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-12">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 ">
+          <h1 class="sm:text-3xl font-medium mb-4 text-[#212427] font-CooperBlack">
             Contact Us!
           </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base font-ComicNeue">
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
             Please feel free to reach out to us for any questions!
           </p>
         </div>
-        <div class="lg:w-1/2 md:w-2/3 mx-auto font-ComicNeue">
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
           <form action="https://formsubmit.co/fca1ecffd8e29794c41b539d334e8485" method="POST">
             <div class="flex flex-wrap -m-2">
               <div class="p-2 w-1/2">
@@ -65,7 +65,7 @@ export default function Contact() {
                 </div>
               </div>
               <div class="p-2 w-full">
-                <button class="flex mx-auto bg-[#813400] hover:bg-black text-white font-semibold hover:text-white py-2 px-4 rounded">
+                <button class="flex mx-auto bg-[#813400] hover:bg-[#212427] text-white font-semibold hover:text-white py-2 px-4 rounded transition ease-out duration-200">
                   Send Message
                 </button>
               </div>
