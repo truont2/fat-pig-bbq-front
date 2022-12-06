@@ -52,7 +52,7 @@ const Footer = () => {
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
           <a className="text-gray-500" href={`${process.env.NEXT_PUBLIC_STRAPI_URL}/admin`}>
-              Admin
+              
             </a>
             <a className="text-gray-500 ml-3" href="https://www.facebook.com/myfatpigbbq">
               <svg
