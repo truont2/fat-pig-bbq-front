@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getPageData, fetchAPI, getGlobalData } from "../utils/api";
+import { fetchAPI, getGlobalData } from "../utils/api";
 import { getLocalizedPaths } from "../utils/localize";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
@@ -20,7 +20,15 @@ export default function DynamicPage({
   // Check if the required data was provided
   if (!router.isFallback && !sections?.length) {
     // return <ErrorPage statusCode={404} />;
-    return <h1 className="text-center text-7xl">This page does not exist. Please return to the main page. Thank you!</h1>
+    return (
+      <section class="text-gray-600 body-font" style={{height: "calc(88vh - 150px)"}}>
+      <div class="container px-5 py-24 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+          <h1 className="text-center text-3xl">This page does not exist. Please return to the main page. Thank you!</h1>
+        </div>
+      </div>
+    </section>
+    )
   }
 
   // Loading screen (only possible in preview mode)
@@ -91,6 +99,11 @@ export async function getStaticPaths(context) {
 
 // for each individual page: get the data for that page
 export async function getStaticProps(context) {
+
+  const dev = process.env.NODE_ENV !== 'production';
+  const server = dev ? 'http://localhost:1337' : process.env.NEXT_PUBLIC_STRAPI_URL;
+
+  console.log(process.env.NODE_ENV, server, dev, "server link");
   const { params, locale, locales, defaultLocale, preview = null } = context;
 
   const globalLocale = await getGlobalData(locale);
@@ -98,7 +111,7 @@ export async function getStaticProps(context) {
   // getting local data for page
   const slugString = (!params.slug ? ["homepage"] : params.slug).join("/");
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/pages?filters[slug][$eq]=${slugString}&[populate]=deep`,
+    `${server}/api/pages?filters[slug][$eq]=${slugString}&[populate]=deep`,
     {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
       headers: {
@@ -114,7 +127,6 @@ export async function getStaticProps(context) {
     // Giving the page no props will trigger a 404 page
     return { props: {} };
   }
-
   const { contentSections, metadata, localizations, slug } =
     pageData.attributes;
 

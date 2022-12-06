@@ -17,3 +17,6 @@
     src: local(''), url("../public/fonts/ComicNeue-Regular.ttf")
 }
 
+body {
+    overflow-x: hidden;
+}

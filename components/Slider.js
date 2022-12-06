@@ -13,16 +13,16 @@ import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
 const Featured = () => {
     const reviews = [
     {
-      name: "Collin Miller",
-      rating: 5, //rating is out of 5
-      review:
-        "First time eating in the restaurant vs getting take out, and while there is not much in the way of decor the staff is super friendly and the food, as usual, was tender and delicious.",
-    },
-    {
       name: "Ghazal Tariri",
       rating: 5, //rating is out of 5
       review:
         "The best ribs ever! We drive half an hour to Edmonds every time we want to treat ourselves with a super yummy ribs!",
+    },
+    {
+      name: "Collin Miller",
+      rating: 5, //rating is out of 5
+      review:
+        "First time eating in the restaurant vs getting take out, and while there is not much in the way of decor the staff is super friendly and the food, as usual, was tender and delicious.",
     },
     {
       name: "Jin Kyong Lee.",
@@ -74,7 +74,7 @@ const Featured = () => {
         {reviews.map((review, index) => (
         <div className={styles.reviewContainer} key={index}>
             <section className="text-gray-600 body-font">
-              <div className="container md:px-5 mx-auto font-ComicNeue">
+              <div className="container md:px-5 mx-auto font-Roboto">
                 <div className="xl:w-4/6 lg:w-3/4 w-full mx-auto text-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
