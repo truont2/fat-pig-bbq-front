@@ -3,13 +3,14 @@ import { getStrapiMedia } from "../../utils/media";
 import styles from "../../styles/Navbar.module.css";
 
 function menuItems({ data }) {
+  console.log('menu', data);
   return (
     <section className="text-gray-600 body-font font-Roboto">
       <div className="relative w-screen bg-black overflow-hidden">
-        <img
+        {/* <img
           className="w-screen md:h-80 h-50 object-cover object-center opacity-70"
           src={`${getStrapiMedia(data.heroImage.data.attributes.url)}`}
-        />
+        /> */}
         <div className="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <h1 className="md:text-7xl text-4xl font-medium title-font text-center font-CooperBlack">Menu</h1>
           <div className="mx-auto text-center" href="/">
