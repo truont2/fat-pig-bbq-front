@@ -8,6 +8,8 @@ import Seo from "../components/elements/seo";
 import Layout from "../components/layout";
 import { FadeLoader } from "react-spinners";
 
+import { Document, Page } from 'react-pdf';
+
 export default function DynamicPage({
   sections,
   metadata,
@@ -35,7 +37,10 @@ export default function DynamicPage({
   if (router.isFallback) {
     return (
       <div className="grid h-screen place-items-center">
-        <FadeLoader color="#da2222" />
+        {/* <FadeLoader color="#da2222" /> */}
+        <Document file="./assets/menu.pdf">
+          <Page pageNumber={1} />
+        </Document>
       </div>
     );
   }
